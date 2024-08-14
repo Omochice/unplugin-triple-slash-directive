@@ -24,7 +24,7 @@ jobs:
         with:
           version: 9.7.0  # renovate: depName=pnpm
           run_install: true
-      - name: Run rome check
-        run: pnpm run lint
-      - name: Run pnpm test
+      - name: Run check
+        run: pnpm run check
+      - name: Run test
         run: pnpm run test
