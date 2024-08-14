@@ -4,4 +4,14 @@
     "github>Omochice/personal-renovate-config",
     "github>aquaproj/aqua-renovate-config#2.3.1",
   ],
+  customManagers: [
+    {
+      customType: "regex",
+      fileMatch: ".github/workflows/.+\\.ya?ml$",
+      matchStrings: [
+        "version:\\s+(?<currentValue>\\d+\\.\\d+.\\d+)  # renovate: depName=(?<depName>\\S+) datasource=(?<datasource>\\S+)",
+      ],
+      datasourceTemplate: "{{datasource}}"
+    }
+  ],
 }
