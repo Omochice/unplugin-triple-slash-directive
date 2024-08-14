@@ -1,1 +1,3 @@
-export interface Options {}
+export type Options = {
+  sample: "sample"
+};
