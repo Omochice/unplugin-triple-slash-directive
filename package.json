@@ -1,83 +1,73 @@
 {
-  "name": "unplugin-triple-slash-derective",
-  "version": "0.1.0",
-  "keywords": [
-    "unplugin",
-    "esbuild",
-    "rollup",
-    "vite",
-    "webpack"
-  ],
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
-    },
-    "./types": {
-      "require": "./dist/types.js",
-      "import": "./dist/types.mjs"
-    },
-    "./*": "./*",
-    "./esbuild": {
-      "require": "./dist/esbuild.js",
-      "import": "./dist/esbuild.mjs"
-    },
-    "./rollup": {
-      "require": "./dist/rollup.js",
-      "import": "./dist/rollup.mjs"
-    },
-    "./vite": {
-      "require": "./dist/vite.js",
-      "import": "./dist/vite.mjs"
-    },
-    "./webpack": {
-      "require": "./dist/webpack.js",
-      "import": "./dist/webpack.mjs"
-    }
-  },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./*"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch src",
-    "fmt": "npm-run-all2 fmt:*",
-    "fmt:package": "sort-package-json",
-    "fmt:code": "biome format --write src"
-  },
-  "dependencies": {
-    "unplugin": "^1.12.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "automd": "^0.3.8",
-    "npm-run-all2": "^6.2.2",
-    "rimraf": "^6.0.1",
-    "sort-package-json": "^2.10.0",
-    "tsup": "6",
-    "typescript": "^5.5.4"
-  },
-  "packageManager": "pnpm@9.7.0",
-  "tsup": {
-    "entryPoints": [
-      "src/*.ts"
-    ],
-    "clean": true,
-    "format": [
-      "cjs",
-      "esm"
-    ],
-    "dts": true
-  }
+	"name": "unplugin-triple-slash-derective",
+	"version": "0.1.0",
+	"keywords": ["unplugin", "esbuild", "rollup", "vite", "webpack"],
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		},
+		"./types": {
+			"require": "./dist/types.js",
+			"import": "./dist/types.mjs"
+		},
+		"./*": "./*",
+		"./esbuild": {
+			"require": "./dist/esbuild.js",
+			"import": "./dist/esbuild.mjs"
+		},
+		"./rollup": {
+			"require": "./dist/rollup.js",
+			"import": "./dist/rollup.mjs"
+		},
+		"./vite": {
+			"require": "./dist/vite.js",
+			"import": "./dist/vite.mjs"
+		},
+		"./webpack": {
+			"require": "./dist/webpack.js",
+			"import": "./dist/webpack.mjs"
+		}
+	},
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "index.d.ts",
+	"typesVersions": {
+		"*": {
+			"*": ["./dist/*", "./*"]
+		}
+	},
+	"files": ["dist"],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch src",
+		"fmt": "npm-run-all2 fmt:*",
+		"fmt:package": "sort-package-json",
+		"fmt:biome": "npm-run-all2 fmt:biome:*",
+		"fmt:biome:fmt": "biome format --write src",
+		"fmt:biome:check": "biome check --write --unsafe",
+		"check": "npm-run-all check:*",
+		"check:type": "tsc --noEmit",
+		"check:biome": "biome ci",
+		"test": "echo \"Error: no test specified\""
+	},
+	"dependencies": {
+		"unplugin": "^1.12.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"automd": "^0.3.8",
+		"npm-run-all2": "^6.2.2",
+		"rimraf": "^6.0.1",
+		"sort-package-json": "^2.10.0",
+		"tsup": "6",
+		"typescript": "^5.5.4"
+	},
+	"packageManager": "pnpm@9.7.0",
+	"tsup": {
+		"entryPoints": ["src/*.ts"],
+		"clean": true,
+		"format": ["cjs", "esm"],
+		"dts": true
+	}
 }
