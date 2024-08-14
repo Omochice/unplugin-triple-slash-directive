@@ -9,7 +9,8 @@
 		"strict": true,
 		"strictNullChecks": true,
 		"resolveJsonModule": true,
-		"noUncheckedIndexedAccess": true
+		"noUncheckedIndexedAccess": true,
+    "noEmit": true
 	},
 	"include": ["src"]
 }
