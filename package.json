@@ -68,6 +68,7 @@
     "tsup": "6",
     "typescript": "^5.5.4"
   },
+  "packageManager": "pnpm@9.7.0",
   "tsup": {
     "entryPoints": [
       "src/*.ts"
