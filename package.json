@@ -53,6 +53,7 @@
 		"test": "echo \"Error: no test specified\""
 	},
 	"dependencies": {
+		"ts-morph": "^23.0.0",
 		"unplugin": "^1.12.1"
 	},
 	"devDependencies": {
