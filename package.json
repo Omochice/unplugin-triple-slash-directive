@@ -40,6 +40,7 @@
 	"files": ["dist"],
 	"scripts": {
 		"build": "tsup",
+		"clean": "rimraf dist",
 		"dev": "tsup --watch src",
 		"fmt": "npm-run-all2 fmt:*",
 		"fmt:package": "sort-package-json",
