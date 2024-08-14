@@ -1,3 +1,3 @@
 export type Options = {
-  sample: "sample"
+	sample: "sample";
 };
