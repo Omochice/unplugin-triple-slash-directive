@@ -2,15 +2,16 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
 		"target": "es2017",
-		"module": "esnext",
+		"module": "NodeNext",
 		"lib": ["esnext", "DOM"],
-		"moduleResolution": "node",
+		"moduleResolution": "NodeNext",
 		"esModuleInterop": true,
 		"strict": true,
 		"strictNullChecks": true,
 		"resolveJsonModule": true,
 		"noUncheckedIndexedAccess": true,
-		"noEmit": true
+		"noEmit": true,
+		"skipLibCheck": true
 	},
 	"include": ["src"]
 }

@@ -57,12 +57,17 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
+		"@rspack/core": "^0.7.5",
 		"automd": "^0.3.8",
 		"npm-run-all2": "^6.2.2",
 		"rimraf": "^6.0.1",
+		"rolldown": "^0.12.2",
+		"rollup": "^4.20.0",
 		"sort-package-json": "^2.10.0",
 		"tsup": "6",
-		"typescript": "^5.5.4"
+		"typescript": "^5.5.4",
+		"vite": "^5.4.0",
+		"webpack": "^5.93.0"
 	},
 	"packageManager": "pnpm@9.7.0",
 	"tsup": {
