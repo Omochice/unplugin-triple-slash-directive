@@ -1,17 +1,19 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: [
-    "github>Omochice/personal-renovate-config",
-    "github>aquaproj/aqua-renovate-config#2.8.0",
+    'github>Omochice/personal-renovate-config',
+    'github>aquaproj/aqua-renovate-config#2.8.0',
   ],
   customManagers: [
     {
-      customType: "regex",
-      fileMatch: ".github/workflows/.+\\.ya?ml$",
-      matchStrings: [
-        "version:\\s+(?<currentValue>\\d+\\.\\d+.\\d+)  # renovate: depName=(?<depName>\\S+) datasource=(?<datasource>\\S+)",
+      customType: 'regex',
+      managerFilePatterns: [
+        '/.github/workflows/.+\\.ya?ml$/',
       ],
-      datasourceTemplate: "{{datasource}}"
-    }
+      matchStrings: [
+        'version:\\s+(?<currentValue>\\d+\\.\\d+.\\d+)  # renovate: depName=(?<depName>\\S+) datasource=(?<datasource>\\S+)',
+      ],
+      datasourceTemplate: '{{datasource}}',
+    },
   ],
 }
