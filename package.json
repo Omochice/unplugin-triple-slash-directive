@@ -59,7 +59,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
 		"@rspack/core": "^1.0.0",
-		"automd": "^0.3.8",
+		"automd": "^0.4.0",
 		"npm-run-all2": "^6.2.2",
 		"rimraf": "^6.0.1",
 		"rolldown": "^0.12.2",
