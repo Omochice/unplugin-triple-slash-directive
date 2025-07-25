@@ -57,18 +57,18 @@
 		"unplugin": "^1.12.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.8.3",
-		"@rspack/core": "^1.0.0",
-		"automd": "^0.3.8",
-		"npm-run-all2": "^6.2.2",
-		"rimraf": "^6.0.1",
-		"rolldown": "^0.12.2",
-		"rollup": "^4.20.0",
-		"sort-package-json": "^2.10.0",
-		"tsup": "8",
-		"typescript": "^5.5.4",
-		"vite": "^5.4.0",
-		"webpack": "^5.93.0"
+		"@biomejs/biome": "1.9.4",
+		"@rspack/core": "1.4.10",
+		"automd": "0.3.8",
+		"npm-run-all2": "6.2.6",
+		"rimraf": "6.0.1",
+		"rolldown": "0.12.2",
+		"rollup": "4.41.0",
+		"sort-package-json": "2.15.1",
+		"tsup": "8.5.0",
+		"typescript": "5.8.3",
+		"vite": "5.4.19",
+		"webpack": "5.99.9"
 	},
 	"packageManager": "pnpm@9.15.9",
 	"tsup": {
