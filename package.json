@@ -62,7 +62,7 @@
 		"automd": "^0.3.8",
 		"npm-run-all2": "^6.2.2",
 		"rimraf": "^6.0.1",
-		"rolldown": "^0.12.2",
+		"rolldown": "^0.15.0",
 		"rollup": "^4.20.0",
 		"sort-package-json": "^2.10.0",
 		"tsup": "8",
